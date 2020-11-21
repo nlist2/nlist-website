@@ -1,59 +1,60 @@
 <!DOCTYPE html>
-<html>
-    <title>Noah List</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<style>
-    html{
-        font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace"
-    }
-	</style>
+
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                document.querySelector('#js-func').onclick = function() {
+                    // strategy of generating random hex color drawn from css-tricks.com by author Chris Coyier
+                    var randomColor = Math.floor(Math.random()*16777215).toString(16);
+
+                    document.getElementById("js-func").style.color = "#" + randomColor;
+                    document.getElementById("js-func-h").style.color = "#" + randomColor;
+                    document.getElementById("js-func-b-b").style.color = "#" + randomColor;
+                    document.getElementById("js-func-b-c").style.color = "#" + randomColor;
+                    document.getElementById("js-func-b-d").style.color = "#" + randomColor;
+                };
+            });
+        </script>
+        <title>Noah List</title>
+    </head>
     <body>
-        <div class="main" style="float: left; max-width: 1400px; padding: 70px;">
-            <div class="sidebar-left" style="max-width: 250px; padding: 20px; float: left; margin-right: 40px; background-color: lightgray; align-items: center; border-radius: 10px; margin-bottom: 30px;">
-                <img src="noahgradfin.JPG" alt="noah" style="display: block; max-height: 285px; border-radius: 10px; margin-left: auto; margin-right: auto;"> <!-- Image here -->
-				<!-- Area for resume-type: email, linkedin, github, etc.-->
-				<div class="left-sidebar-content">
-					<div class="lsc-text" style="font-size: 15px; border-style: solid; border-color: lightgray; border-width: 1px; border-bottom-color: black;">
-						<p>
-							<b style="font-size: 25px;">Noah List</b>
-						<br> <br>
-						Harvard University C/O 2024
-						<br><br>
-						University of Chicago Laboratory Schools C/O 2020
-						</p>
-					</div>
-					<div class="lsc-socials">
-						<br>
-					    <a href="https://www.github.com/nlist2" style="color: darkgreen; text-decoration:  none;"><i class="fa fa-github" style="font-size:36px"></i> @nlist2</a>
-						<br> <br>
-						<a href="https://www.linkedin.com/in/noah-list/" style="color: darkgreen; text-decoration:  none;"><i class="fa fa-linkedin-square" style="font-size:36px"></i> Noah List</a>
-						<br> <br>
-						<a href="https://www.instagram.com/noah2list/" style="color: darkgreen; text-decoration:  none;"><i class="fa fa-instagram" style="font-size:36px"></i> @noah2list</a>
-						<br> <br>
-						<a href="https://twitter.com/noah_list?lang=en" style="color: darkgreen; text-decoration:  none;"><i class="fa fa-twitter" style="font-size:36px"></i> @noah_list</a>
-					</div>
-				</div>
+        <div id="main">
+            <div id="nav">
+                <div id="image-d">
+                    <img src="noah.png" alt="headshot" id="image">
+                </div>
+                <div id="buttons">
+                    <a id="js-func-b-a" href="index.html" style="color: gray;"><b>Menu</b></a>
+                    <br>
+                    <a id="js-func-b-b" href="about_me.html"><b>About me</b></a>
+                    <br>
+                    <a id="js-func-b-c" href="projects.html"><b>Projects</b></a>
+                    <br>
+                    <a id="js-func-b-d" href="more.html"><b>More</b></a>
+                </div>
             </div>
-            <div class="sidebar-right" style=" "> <!-- Description/main text here-->
-                <p>
-				<h1 style="color: darkgreen;"><b>Hi. I'm Noah. </b></h1> 
-					<p style="line-height: 2;">
-                    I am a freshman at Harvard College, concentrating in Computer Science and Economics, with a particular focus in Data Science. 
-                    I have had various work experience in these fields, 
-                    such as being a Data Analyst for the Chicago White Sox, researching and developing for the University of Chicago Economics Department and building two iOS Applications. <br> <br>
-                    Currently, I'm working on changing how people communicate online, developing and coordinating for the startup, <a href="https://congregate.live" style="color: darkgreen; text-decoration:  none;"><b>Congregate</b></a>. 
-                    Also, I just finished building a 
-						<a href="https://www.detainedindanger.org" style="color: darkgreen; text-decoration:  none;"><b>project</b></a> 
-                    under the auspices of Human Rights First, 
-                    working with the Harvard College Data Analytics Group to illustrate the distribution of COVID-19 in ICE Detention Facilities.
-						<br> <br>
-						
-					Otherwise, I enjoy watching and talking about sports (when I'm not analyzing them), trading stocks and following tech news. 
-					</p>
-                </p>
+            <div id="text">
+                <div id="main-text">
+                    <div id="js-func-h">
+                        <h2><b>Hi, I'm Noah.</b></h2>
+                    </div>
+                    <hr>
+                    <p>
+                        I'm a Harvard College first-year, currently living in Canaday.
+                        I'm planning on studying computer science and/or economics as I'm passionate and interested in the fusion of the two, specifically data science and economics.
+                        When I'm not in school, I enjoy watching baseball, trading stocks, and spending time with my 4 siblings, 3 step-siblings and 3 dogs.
+                        To learn more about me, use the <b>navigation menu on the left</b>.
+                    </p>
+                    <hr>
+                    <div class="alert alert-light" role="alert">
+                          <a id="js-func"><b>p.s. click here to change the theme of the menu to a random color:)</b></a>
+                    </div>
+                </div>
             </div>
         </div>
     </body>
