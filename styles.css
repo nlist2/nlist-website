@@ -33,11 +33,11 @@
 }
 
 #buttons{
-    color: #2d7df6;
+    color: hsl(123, 59%, 33%);
 }
 
 #js-func-h{
-    color: #2d7df6;
+    color: hsl(123, 59%, 33%);
 }
 
 #nav a:hover{
@@ -45,5 +45,5 @@
 }
 
 .color-c{
-    color: #2d7df6;
+    color: hsl(123, 59%, 33%)
 }
