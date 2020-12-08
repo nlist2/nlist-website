@@ -37,23 +37,7 @@
 }
 
 #js-func-h{
-    color: #238628;
-}
-
-#js-func-a{
-    color: #238628;
-}
-
-#js-func-b{
-    color: #238628;
-}
-
-#js-func-c{
-    color: #238628;
-}
-
-#js-func-d{
-    color: #238628;
+    color: #1580fb;
 }
 
 #nav a:hover{
@@ -62,4 +46,8 @@
 
 .color-c{
     color: #238628;
+}
+
+#app-store-button{
+    background-color: white;
 }
