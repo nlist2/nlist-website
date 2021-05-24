@@ -27,7 +27,7 @@
 }
 
 #image{
-    border-radius: 48%;
+    border-radius: 8px;
     max-width: 120px;
     margin-bottom: 20px;
     padding-bottom: 10px;
