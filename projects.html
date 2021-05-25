@@ -8,6 +8,19 @@
         <link href="styles.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="lightbox_node/lightbox2/dist/css/lightbox.css" rel="stylesheet"/>
+        <script>
+          function showLibrary() {
+            var x = document.getElementById("image-slide");
+            var bl = document.getElementById("image-button");
+            if (x.style.display === "none") {
+              x.style.display = "block";
+              bl.innerHTML = "<b>Hide Image Library</b>";
+            } else {
+              x.style.display = "none";
+              bl.innerHTML = "<b>Show Image Library</b>";
+            }
+          }
+        </script>
         <title>Noah List</title>
     </head>
     <body>
@@ -151,7 +164,9 @@
                       <b>UCLS Sports</b>
                         <hr>
                             Built a complex interface application from scratch that <b style="color:#1580fb">depicts and relays information regarding the athletic department</b> of University of Chicago Laboratory Schools – published on Apple App Store but down until Fall.
-                            <div class="image-slide" style="margin-top:20px">
+                            <br>
+                            <button id="image-button" onclick="showLibrary()"><b>Show Photo Library</b></button>
+                            <div id="image-slide" style="margin-top:20px; display: none;">
                             <a class="example-image-link" href="images/app1.png" data-lightbox="group" data-title="App Store Preview">
                               <img class="example-image" src="images/app1.png" alt="desc" style="width:75px;">
                             </a>

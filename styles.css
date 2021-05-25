@@ -53,3 +53,11 @@
 #app-store-button{
     background-color: white;
 }
+
+#image-button{
+    border: none;
+    outline: none;
+    color: #1580fb;
+    background-color: transparent;
+    padding-top: 10px;
+}
