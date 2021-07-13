@@ -27,11 +27,12 @@
 }
 
 #image{
+    align-items: center;
     border-radius: 58%;
-    max-width: 120px;
-    margin-bottom: 20px;
+    max-width: 200px;
     padding-bottom: 10px;
     padding-top: 5px;
+    margin-left: -40px;
 }
 
 #buttons{
